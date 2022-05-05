@@ -1,4 +1,4 @@
-import { add, divide } from './units';
+import { add, divide, concat } from './units';
 
 import { expect } from 'chai';
 import 'mocha';
@@ -16,6 +16,15 @@ describe('add function', () => {
   });
 
 });
+
+describe('concat function', () => {
+
+  it('should concat 2 strings', () => {
+    const result = concat("a", "b");
+    expect(result).to.equal("ab");
+  });
+
+});  
 
 describe('divide', () => {
 
